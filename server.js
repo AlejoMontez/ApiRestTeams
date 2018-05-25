@@ -487,7 +487,7 @@ let jugadores= [
         juga_img2: '',
         juga_img3: '',
         juga_img4: '',
-        juga_img5: ''
+        juga_img5: 'imagen'
 
     }
 
