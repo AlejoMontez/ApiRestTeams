@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000
 let calenpartidos = [
     {
         tipo: '1',
-        dia: 'Mayo 10',
+        dia: '10/05/2018',
         
     },
     {
@@ -24,7 +24,7 @@ let calenpartidos = [
     },
      {
         tipo: '1',
-        dia: 'Mayo 12',
+        dia: '12/05/2018',
         
     },
     {
@@ -37,7 +37,7 @@ let calenpartidos = [
     },
      {
         tipo: '1',
-        dia: 'Mayo 15',
+        dia: '20/05/2018',
         
     },
     {
@@ -50,7 +50,7 @@ let calenpartidos = [
     },
     {
         tipo: '1',
-        dia: 'Mayo 17',
+        dia: '26/05/2018',
         
     },
     {
@@ -63,7 +63,7 @@ let calenpartidos = [
     },
      {
         tipo: '1',
-        dia: 'Mayo 20',
+        dia: '07/06/2018',
         
     },
     {
@@ -329,11 +329,11 @@ let jugadores= [
         nombre3: 'John Collins',
         nombre4: 'Miles Plumlee',
         nombre5: 'Josh Magette',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627098.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628537.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628381.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203101.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203705.png'
 
     },
     {
@@ -343,11 +343,11 @@ let jugadores= [
         nombre3: 'Marcus Morris',
         nombre4: 'Greg Monroe',
         nombre5: 'Kadeem Allen',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626179.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627846.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202694.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202328.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628443.png'
 
     },
     {
@@ -357,11 +357,11 @@ let jugadores= [
         nombre3: 'Joe Harris',
         nombre4: 'Dante Cunningham',
         nombre5: 'Quincy Acy',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203915.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627747.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203925.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201967.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203112.png'
 
     },
       {
@@ -371,11 +371,11 @@ let jugadores= [
         nombre3: 'Dwayne Bacon',
         nombre4: 'Marvin Williams',
         nombre5: 'Cody Zeller',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202689.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201587.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628407.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/101107.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203469.png'
 
     },
      {
@@ -385,11 +385,11 @@ let jugadores= [
         nombre3: 'Paul Zipser',
         nombre4: 'Noah Vonleh',
         nombre5: 'Cristiano Felicio',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627739.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628021.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627835.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203943.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626245.png'
 
     },
     {
@@ -399,11 +399,11 @@ let jugadores= [
         nombre3: 'LeBron James',
         nombre4: 'Okaro White',
         nombre5: 'Tristan Thompsoncio',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201588.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203918.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2544.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627855.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202684.png'
 
     },
      {
@@ -413,11 +413,11 @@ let jugadores= [
         nombre3: 'Harrison Barnes',
         nombre4: 'Dwight Powell',
         nombre5: 'Salah Mejri',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627812.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203552.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203084.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203939.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626257.png'
 
     },
     {
@@ -427,11 +427,11 @@ let jugadores= [
         nombre3: 'Wilson Chandler',
         nombre4: 'Paul Millsap',
         nombre5: 'Mason Plumlee',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2734.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203914.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201163.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/200794.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203486.png'
 
     },
      {
@@ -441,11 +441,11 @@ let jugadores= [
         nombre3: 'James Ennis',
         nombre4: 'Anthony Tolliver',
         nombre5: 'Eric Moreland',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202397.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628379.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203516.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201229.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203961.png'
 
     },
     {
@@ -455,11 +455,11 @@ let jugadores= [
         nombre3: 'Kevin Durant',
         nombre4: 'Draymond Green',
         nombre5: 'Damian Jones',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201939.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202691.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201142.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203110.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627745.png'
 
     },
     {
@@ -469,11 +469,11 @@ let jugadores= [
         nombre3: 'Joe Johnson',
         nombre4: 'Ryan Anderson',
         nombre5: 'Zhou Qi',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: ''
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201569.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201935.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2207.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201583.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627753.png'
 
     },
     {
@@ -483,11 +483,11 @@ let jugadores= [
         nombre3: 'Bojan Bogdanovic',
         nombre4: 'Domantas Sabonis',
         nombre5: 'Ben Moore',
-        juga_img1: '',
-        juga_img2: '',
-        juga_img3: '',
-        juga_img4: '',
-        juga_img5: 'imagen'
+        juga_img1: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202709.png',
+        juga_img2: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203506.png',
+        juga_img3: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202711.png',
+        juga_img4: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627734.png',
+        juga_img5: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628500.png'
 
     }
 
