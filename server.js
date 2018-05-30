@@ -494,6 +494,16 @@ let jugadores= [
 
 ];
 
+let users = [
+    {
+        id: '0',
+        user: 'admin',
+        password: '1234',
+        name: 'admin',
+        email: 'admin@gmail.com',
+        img_user: 'https://wouri.tv/images/homme.jpg'
+    }
+];
 // ***************************************************************
 
 app.use(bodyParser.json());
@@ -507,6 +517,11 @@ app.get('/', (req, res) => {
 // Listar todos los partidos
 app.get('/calenpartidos', (req, res) => {
     res.send(calenpartidos)
+})
+
+// Listar todos los partidos
+app.get('/users', (req, res) => {
+    res.send(users)
 })
 
 // Listar tabla de posiciones
@@ -528,32 +543,58 @@ app.get('/equipos', (req, res) => {
 app.get('/jugadores', (req, res) => {
     res.send(jugadores)
 })
-/*
-// Listar usuarios
-app.get('/users', (req, res) => {
-    res.send(users.reverse())
-})
-// Crear usuarios
-app.post('/users', (req, res) => {
+
+
+// Validar user and pass 
+app.post('/login', (req, res) => {
     let data = req.body;
-    let itemUser = {name: data.Name};
-    users.push(itemUser)
-    res.send("New user add")
+    let login = [{searchUser: false,id: '0',user: '',password: '',name: '',email: '',img_user:''}];
+
+    users.some(function (value, index, _arr) {
+        if( (value.user == data.user) && (value.password == data.pass) ){
+            login[0]['searchUser'] = true;
+            login[0]['id'] = value.id;
+            login[0]['user'] = value.user;
+            login[0]['password'] = value.password;
+            login[0]['name'] = value.name;
+            login[0]['email'] = value.email;
+            login[0]['img_user'] = value.img_user;
+            return true;
+        }else{
+            return false;
+        }
+    });
+
+    res.send(login)
 })
-// Actualizar usuarios
-app.patch('/users/:id',(req, res) => {
-    let params = req.params;
-    let data = req.query;
-    users[params.id] = {name: data.user_name};
-    res.send("User update")
+
+// Metodo para crear una cuenta de usuario
+app.post('/signup', (req, res) => {
+    let data = req.body;
+    let consecutive = users.length;
+    // let itemUser = {
+    //     id: consecutive,
+    //     user: data.user,
+    //     password: data.pass,
+    //     name: data.name,
+    //     email: data.email,
+    //     img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
+    // };
+    let itemUser = {
+        user: data.user,
+        password: data.pass,
+        name: data.name,
+        email: data.email,
+        repassword: '123'
+    };
+
+    users.push(itemUser);
+    // users.push(itemUser)
+    
+    res.send("usuario creado correctamente")
 })
-// Eliminar usuarios
-app.delete('/users/:id',(req, res) => {
-    let params = req.params;
-    users.splice(params.id, 1);
-    res.send('User delete')
-})
-*/
+
+
 
 // ***************************************************************
  
