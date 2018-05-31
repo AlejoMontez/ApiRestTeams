@@ -588,10 +588,10 @@ app.post('/signup', (req, res) => {
     let itemUser = {
         
         user: data.user,
-        password: data.password,
+        password: data.pass,
         name: data.name,
         email: data.email,
-        repassword: data.repassword
+        repassword: '123'
     };
 
     users.push(itemUser);
