@@ -127,7 +127,7 @@ let estadios = [
         capacidad: '18.047', 
         anio: '1999',
         ciudad: 'Atlanta',
-        url: 'http://nba.cdn.turner.com/nba/big/teams/hawks/2016/11/04/1478278120976-Incredible-Time-Lapse-Shows-7-Events-In-8-Days-at-Philips-Arena-915575-8.576x324.jpg'
+        url: 'https://www.hispanosnba.com/imagenes/estadios/interior/philips-arena-i.jpg'
         
         
     },
