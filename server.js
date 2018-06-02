@@ -128,7 +128,7 @@ let estadios = [
         anio: '1999',
         ciudad: 'Atlanta',
         url: 'http://nba.cdn.turner.com/nba/big/teams/hawks/2016/11/04/1478278120976-Incredible-Time-Lapse-Shows-7-Events-In-8-Days-at-Philips-Arena-915575-8.576x324.jpg',       
-        star: '3'
+        
         
     },
     {
@@ -138,7 +138,7 @@ let estadios = [
         anio: '1995', 
         ciudad: 'Boston',
         url: 'http://www.destination360.com/north-america/us/massachusetts/images/s/td-garden.jpg',
-        star: '3'
+        
         
     },
     {
@@ -148,7 +148,7 @@ let estadios = [
         anio: '2012', 
         ciudad: 'Nueva York',
         url: 'http://stadiumparkingguides.com/wp-content/uploads/2014/10/barclays_center_parking.jpg',
-        star: '3'
+        
         
     },
     {
@@ -158,7 +158,7 @@ let estadios = [
         anio: '2005', 
         ciudad: 'Charlotte',
         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7cZ698LmrsmlsHx5CHkJGpJjGmAJrWtidWQHkg9DInQNhPKwgUQ',
-        star: '3'
+        
         
     },
     {
@@ -178,7 +178,7 @@ let estadios = [
         anio: '1994', 
         ciudad: 'Cleveland',
         url: 'http://crg.us.com/wp-content/uploads/2015/07/cavs-flames_1_mg_7184-final.jpg',
-        star: '3'
+        
         
     },
     {
@@ -188,7 +188,7 @@ let estadios = [
         anio: '2001', 
         ciudad: 'Dallas',
         url: 'http://stadiumparkingguides.com/wp-content/uploads/2014/10/american_airlines_center_parking.jpg',
-        star: '3'
+        
         
     },
     {
@@ -198,7 +198,7 @@ let estadios = [
         anio: '1999', 
         ciudad: 'Denver',
         url: 'http://emmashercliff.typepad.com/photos/uncategorized/2008/04/08/p3290095.jpg',
-        star: '3'
+        
         
     },
     {
@@ -208,7 +208,7 @@ let estadios = [
         anio: '2017', 
         ciudad: 'Detroit',
         url: 'http://lajugadafinanciera.com/wp-content/uploads/2016/11/Little-Caesars-Arena.jpg',
-        star: '3'
+        
         
     },
     {
@@ -218,7 +218,7 @@ let estadios = [
         anio: '1966', 
         ciudad: 'Oakland',
         url: 'http://alphamechanicalservice.com/wp-content/uploads/2014/06/SanAntonio-1.jpg',
-        star: '3'
+        
         
     },
     {
@@ -228,7 +228,7 @@ let estadios = [
         anio: '2003', 
         ciudad: 'Houston',
         url: 'http://1c71hb3in51z3g8k1j1nogrdvsm.wpengine.netdna-cdn.com/wp-content/uploads/2017/11/1920px-Toyota_Center_inside.jpg',
-        star: '3'
+        
         
     },
     {
@@ -238,7 +238,7 @@ let estadios = [
         anio: '1999', 
         ciudad: 'Indiana',
         url: 'http://www.ehc-global.com/wp-content/uploads/2016/09/Americas-USA-Bankers-Life-Fieldhouse-02.jpg',
-        star: '3'
+        
         
     }
 ];
@@ -502,7 +502,31 @@ let users = [
         name: 'admin',
         email: 'admin@gmail.com',
         img_user: 'https://wouri.tv/images/homme.jpg'
+    },
+      {
+        id: '1',
+        user: 'alejandro',
+        password: '123',
+        name: 'alejo',
+        email: 'alejo@gmail.com',
+        img_user: 'https://wouri.tv/images/homme.jpg'
     }
+];
+
+let favoritos_equipos = [
+    {
+        id:'1',
+        id_equipo: '2'
+        id_user: '0'
+
+    },
+     {
+        id:'2',
+        id_equipo: '4'
+        id_user: '1'
+
+    }
+
 ];
 
 
@@ -575,15 +599,7 @@ app.post('/signup', (req, res) => {
     let data = req.body;
       
     let consecutive = users.length;
-     /*let itemUser = {
-         id: consecutive,
-         user: data.user,
-        password: data.pass,
-         name: data.name,
-         email: data.email,
-         img_user: 'https://www.littlemiracles.com.au/wp-content/uploads/2015/08/kid-on-ipad.png'
-
-     }; */
+  
 
     let itemUser = {
         
@@ -591,16 +607,25 @@ app.post('/signup', (req, res) => {
         password: data.pass,
         name: data.name,
         email: data.email,
-        repassword: '123'
+        repassword: '1234'
     };
 
     users.push(itemUser);
-    // users.push(itemUser)
+    
     
     res.send("")
 })
 
 
+app.post('/favoritos_equipos', (req, res) => {
+    let data = req.body;
+    let consecutive = favoritos_equipos.length;
+
+    let newFavorite = {id_user: data.id_user, id_equipo: data.id_equipo};
+
+    equipos.push(newFavorite);
+    res.send("");
+})
 
 // ***************************************************************
  
