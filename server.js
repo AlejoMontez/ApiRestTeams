@@ -168,7 +168,7 @@ let estadios = [
         anio: '1994', 
         ciudad: 'Chicago',
         url: 'http://www.insidearenas.com/wp-content/uploads/2016/09/united2011.jpg'
-        star: '3'
+        
         
     },
     {
@@ -516,13 +516,13 @@ let users = [
 let favoritos_equipos = [
     {
         id:'1',
-        id_equipo: '2'
+        id_equipo: '2',
         id_user: '0'
 
     },
      {
         id:'2',
-        id_equipo: '4'
+        id_equipo: '4',
         id_user: '1'
 
     }
