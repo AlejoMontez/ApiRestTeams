@@ -127,7 +127,7 @@ let estadios = [
         capacidad: '18.047', 
         anio: '1999',
         ciudad: 'Atlanta',
-        url: 'http://nba.cdn.turner.com/nba/big/teams/hawks/2016/11/04/1478278120976-Incredible-Time-Lapse-Shows-7-Events-In-8-Days-at-Philips-Arena-915575-8.576x324.jpg',       
+        url: 'http://nba.cdn.turner.com/nba/big/teams/hawks/2016/11/04/1478278120976-Incredible-Time-Lapse-Shows-7-Events-In-8-Days-at-Philips-Arena-915575-8.576x324.jpg'       
         
         
     },
@@ -137,7 +137,7 @@ let estadios = [
         capacidad: '18.624', 
         anio: '1995', 
         ciudad: 'Boston',
-        url: 'http://www.destination360.com/north-america/us/massachusetts/images/s/td-garden.jpg',
+        url: 'http://www.destination360.com/north-america/us/massachusetts/images/s/td-garden.jpg'
         
         
     },
@@ -147,7 +147,7 @@ let estadios = [
         capacidad: '17.732', 
         anio: '2012', 
         ciudad: 'Nueva York',
-        url: 'http://stadiumparkingguides.com/wp-content/uploads/2014/10/barclays_center_parking.jpg',
+        url: 'http://stadiumparkingguides.com/wp-content/uploads/2014/10/barclays_center_parking.jpg'
         
         
     },
@@ -157,7 +157,7 @@ let estadios = [
         capacidad: '19.077', 
         anio: '2005', 
         ciudad: 'Charlotte',
-        url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7cZ698LmrsmlsHx5CHkJGpJjGmAJrWtidWQHkg9DInQNhPKwgUQ',
+        url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7cZ698LmrsmlsHx5CHkJGpJjGmAJrWtidWQHkg9DInQNhPKwgUQ'
         
         
     },
@@ -167,7 +167,7 @@ let estadios = [
         capacidad: '20.917', 
         anio: '1994', 
         ciudad: 'Chicago',
-        url: 'http://www.insidearenas.com/wp-content/uploads/2016/09/united2011.jpg',
+        url: 'http://www.insidearenas.com/wp-content/uploads/2016/09/united2011.jpg'
         star: '3'
         
     },
@@ -177,7 +177,7 @@ let estadios = [
         capacidad: '20.562',
         anio: '1994', 
         ciudad: 'Cleveland',
-        url: 'http://crg.us.com/wp-content/uploads/2015/07/cavs-flames_1_mg_7184-final.jpg',
+        url: 'http://crg.us.com/wp-content/uploads/2015/07/cavs-flames_1_mg_7184-final.jpg'
         
         
     },
@@ -187,7 +187,7 @@ let estadios = [
         capacidad: '19.200', 
         anio: '2001', 
         ciudad: 'Dallas',
-        url: 'http://stadiumparkingguides.com/wp-content/uploads/2014/10/american_airlines_center_parking.jpg',
+        url: 'http://stadiumparkingguides.com/wp-content/uploads/2014/10/american_airlines_center_parking.jpg'
         
         
     },
@@ -197,7 +197,7 @@ let estadios = [
         capacidad: '19.155', 
         anio: '1999', 
         ciudad: 'Denver',
-        url: 'http://emmashercliff.typepad.com/photos/uncategorized/2008/04/08/p3290095.jpg',
+        url: 'http://emmashercliff.typepad.com/photos/uncategorized/2008/04/08/p3290095.jpg'
         
         
     },
@@ -207,7 +207,7 @@ let estadios = [
         capacidad: '20.491',  
         anio: '2017', 
         ciudad: 'Detroit',
-        url: 'http://lajugadafinanciera.com/wp-content/uploads/2016/11/Little-Caesars-Arena.jpg',
+        url: 'http://lajugadafinanciera.com/wp-content/uploads/2016/11/Little-Caesars-Arena.jpg'
         
         
     },
@@ -217,7 +217,7 @@ let estadios = [
         capacidad: '19.596',  
         anio: '1966', 
         ciudad: 'Oakland',
-        url: 'http://alphamechanicalservice.com/wp-content/uploads/2014/06/SanAntonio-1.jpg',
+        url: 'http://alphamechanicalservice.com/wp-content/uploads/2014/06/SanAntonio-1.jpg'
         
         
     },
@@ -227,7 +227,7 @@ let estadios = [
         capacidad: '18.055', 
         anio: '2003', 
         ciudad: 'Houston',
-        url: 'http://1c71hb3in51z3g8k1j1nogrdvsm.wpengine.netdna-cdn.com/wp-content/uploads/2017/11/1920px-Toyota_Center_inside.jpg',
+        url: 'http://1c71hb3in51z3g8k1j1nogrdvsm.wpengine.netdna-cdn.com/wp-content/uploads/2017/11/1920px-Toyota_Center_inside.jpg'
         
         
     },
@@ -237,7 +237,7 @@ let estadios = [
         capacidad: '18.165', 
         anio: '1999', 
         ciudad: 'Indiana',
-        url: 'http://www.ehc-global.com/wp-content/uploads/2016/09/Americas-USA-Bankers-Life-Fieldhouse-02.jpg',
+        url: 'http://www.ehc-global.com/wp-content/uploads/2016/09/Americas-USA-Bankers-Life-Fieldhouse-02.jpg'
         
         
     }
@@ -623,7 +623,7 @@ app.post('/favoritos_equipos', (req, res) => {
 
     let newFavorite = {id_user: data.id_user, id_equipo: data.id_equipo};
 
-    equipos.push(newFavorite);
+    favoritos_equipos.push(newFavorite);
     res.send("");
 })
 
