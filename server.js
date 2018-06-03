@@ -513,15 +513,15 @@ let users = [
     }
 ];
 
-let favoritos_equipos = [
+let favoritos = [
     {
-        id:'1',
+        id:'0',
         id_equipo: '2',
         id_user: '0'
 
     },
      {
-        id:'2',
+        id:'1',
         id_equipo: '4',
         id_user: '1'
 
@@ -602,7 +602,7 @@ app.post('/signup', (req, res) => {
   
 
     let itemUser = {
-        
+        id: consecutive,
         user: data.user,
         password: data.pass,
         name: data.name,
@@ -613,20 +613,45 @@ app.post('/signup', (req, res) => {
     users.push(itemUser);
     
     
-    res.send("")
+    res.send(itemUser)
 })
 
 
-app.post('/favoritos_equipos', (req, res) => {
+app.post('/favoritos', (req, res) => {
     let data = req.body;
-    let consecutive = favoritos_equipos.length;
+    let consecutive = favoritos.length;
 
-    let newFavorite = {id_user: data.id_user, id_equipo: data.id_equipo};
+    let itemFavorite = {
+        id: consecutive,
+        id_user: data.user,
+        id_equipo: data.equipo
 
-    favoritos_equipos.push(newFavorite);
-    res.send("");
+    };
+
+    favoritos.push(itemFavorite);
+    res.send(itemFavorite)
 })
 
+
+app.get('/favoritos', (req, res) => {
+    let data = req.query;
+    let id_user = data.user
+    let equipoTmp = [];
+
+    for(let i=0; i<favoritos.length; i++){
+        if( favoritos[i]['id_user'] == id_user ){
+            let itemEquipo = {
+                id: equipos[value.id_equipo]['id'],
+                nombre: equipos[value.id_equipo]['nombre'],
+                logo: equipos[value.id_equipo]['logo'],
+                entrenador: equipos[value.id_equipo]['entrenador']
+            };
+            equipoTmp.push(itemEquipo);
+        }
+    }
+
+    res.send(equipoTmp)
+})
 // ***************************************************************
  
 http.createServer(app).listen(PORT, () => {
