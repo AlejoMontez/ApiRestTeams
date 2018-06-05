@@ -505,10 +505,34 @@ let users = [
     },
       {
         id: '1',
-        user: 'alejandro',
+        user: 'alejo',
         password: '123',
-        name: 'alejo',
+        name: 'Alejandro',
         email: 'alejo@gmail.com',
+        img_user: 'https://wouri.tv/images/homme.jpg'
+    },
+     {
+        id: '2',
+        user: 'yojans',
+        password: '1234',
+        name: 'Yojan',
+        email: 'yojanes@gmail.com',
+        img_user: 'https://wouri.tv/images/homme.jpg'
+    },
+     {
+        id: '3',
+        user: 'jairoo',
+        password: '12345',
+        name: 'Jairo',
+        email: 'jairoo@gmail.com',
+        img_user: 'https://wouri.tv/images/homme.jpg'
+    },
+      {
+        id: '4',
+        user: 'mariap',
+        password: '123456',
+        name: 'Maria',
+        email: 'mariap@gmail.com',
         img_user: 'https://wouri.tv/images/homme.jpg'
     }
 ];
@@ -636,6 +660,7 @@ app.post('/favoritos', (req, res) => {
 app.get('/favoritos', (req, res) => {
     let data = req.query;
     let id_user = data.user
+    let id_equipo = data.equipo
     let equipoTmp = [];
 
     for(let i=0; i<favoritos.length; i++){
