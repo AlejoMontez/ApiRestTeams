@@ -501,7 +501,7 @@ let users = [
         password: '1234',
         name: 'admin',
         email: 'admin@gmail.com',
-        img_user: 'https://wouri.tv/images/homme.jpg'
+        img_user: 'https://st2.depositphotos.com/1007566/11574/v/950/depositphotos_115747950-stock-illustration-executive-businessman-profile-isolated-icon.jpg'
     },
       {
         id: '1',
@@ -509,7 +509,7 @@ let users = [
         password: '123',
         name: 'Alejandro',
         email: 'alejo@gmail.com',
-        img_user: 'https://wouri.tv/images/homme.jpg'
+        img_user: 'https://st2.depositphotos.com/1007566/11574/v/950/depositphotos_115747956-stock-illustration-executive-businessman-profile-isolated-icon.jpg'
     },
      {
         id: '2',
@@ -517,7 +517,7 @@ let users = [
         password: '1234',
         name: 'Yojan',
         email: 'yojanes@gmail.com',
-        img_user: 'https://wouri.tv/images/homme.jpg'
+        img_user: 'https://thumbs.dreamstime.com/b/usuario-an%C3%B3nimo-masculino-del-icono-perfil-de-avatar-en-fondo-redondo-colorido-102878325.jpg'
     },
      {
         id: '3',
@@ -525,7 +525,7 @@ let users = [
         password: '12345',
         name: 'Jairo',
         email: 'jairoo@gmail.com',
-        img_user: 'https://wouri.tv/images/homme.jpg'
+        img_user: 'https://thumbs.dreamstime.com/b/usuario-an%C3%B3nimo-masculino-del-icono-perfil-de-avatar-en-fondo-redondo-colorido-102878566.jpg'
     },
       {
         id: '4',
@@ -533,7 +533,7 @@ let users = [
         password: '123456',
         name: 'Maria',
         email: 'mariap@gmail.com',
-        img_user: 'https://wouri.tv/images/homme.jpg'
+        img_user: 'https://thumbs.dreamstime.com/b/usuario-an%C3%B3nimo-masculino-del-icono-perfil-de-avatar-en-fondo-redondo-colorido-102878449.jpg'
     }
 ];
 
@@ -631,7 +631,8 @@ app.post('/signup', (req, res) => {
         password: data.pass,
         name: data.name,
         email: data.email,
-        repassword: '1234'
+        repassword: '1234',
+        img_user: 'https://wouri.tv/images/homme.jpg'
     };
 
     users.push(itemUser);
